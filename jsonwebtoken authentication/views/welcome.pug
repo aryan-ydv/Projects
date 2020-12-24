@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+    link(rel='shortcut icon', href='//cdn2.auth0.com/styleguide/latest/lib/logos/img/favicon.png') 
+ 
+  body
+    nav.w3-bar.w3-border.w3-light-grey( role="navigation" )
+      .w3-bar-item.w3-text-grey Auth0 - NodeJS
+      a(href="/banker/get" style="background-color: red").w3-bar-item.w3-button GetBanker
+      a(href="/customer/get" style="background-color: yellow").w3-bar-item.w3-button GetCustomer
+      a(href="/account/get" style="background-color: pink").w3-bar-item.w3-button GetAccount
+      a(href="/checking/get" style="background-color: grey").w3-bar-item.w3-button GetChecking
+      a(href="/loan/get" style="background-color: blue").w3-bar-item.w3-button GetLoan
+      a(href="/saving/get" style="background-color: green").w3-bar-item.w3-button GetSaving
+      a(href="/banker/get" style="background-color: aqua").w3-bar-item.w3-button GetBanker
+      a(href="/teller/get" style="background-color: brown").w3-bar-item.w3-button GetTeller
+      a(href="/" style="background-color: blue").w3-bar-item.w3-button Log Out
+    block content
+        
+      h4(style="color: red") Welcome in BankApi:

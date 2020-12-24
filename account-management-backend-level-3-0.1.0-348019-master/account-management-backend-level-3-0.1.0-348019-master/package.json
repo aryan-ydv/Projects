@@ -1,0 +1,15 @@
+{
+  "name": "account-management-backend-level-3",
+  "version": "0.0.1",
+  "scripts": {
+   
+  "dev": "PORT=3031 NODE_ENV=development ts-node-dev app/index.ts",
+  "build": "tsc",
+  "start": "PORT=3031 node dist/index.js",
+  "test": "cypress run"
+
+  },
+  "devDependencies": {
+    "cypress": "^5.4.0"
+  }
+}
